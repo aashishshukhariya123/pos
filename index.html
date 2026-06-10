@@ -1,0 +1,2222 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Exam Set Nepal - Class 5 | 8 | 10 Model Questions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+    --primary-red: #DC143C;
+    --primary-blue: #0A2463;
+    --accent-gold: #FFC145;
+    --class10: #FF6B6B;
+    --class8: #4ECDC4;
+    --class5: #45B7D1;
+    --light-bg: #F7F9FC;
+    --white: #ffffff;
+    --dark: #1E1E2E;
+    --success: #6BCF7F;
+    --warning: #FF9F1C;
+    --card-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    --card-shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+    color: var(--dark);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header Redesign */
+header {
+    background: var(--white);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    box-shadow: 0 4px 12px rgba(220, 20, 60, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-icon {
+    transform: rotate(15deg) scale(1.1);
+}
+
+.logo div:last-child {
+    line-height: 1.3;
+}
+
+.logo div:last-child div {
+    font-size: 1.8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+}
+
+.logo small {
+    font-size: 0.75rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    background: var(--light-bg);
+    padding: 0.5rem;
+    border-radius: 16px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+nav a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+nav a:hover {
+    background: var(--white);
+    color: var(--primary-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-red), var(--primary-blue));
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav a:hover::after {
+    width: 80%;
+}
+
+.mobile-menu {
+    display: none;
+    width: 44px;
+    height: 44px;
+    background: var(--light-bg);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu:hover {
+    background: var(--primary-blue);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Hero Section Redesign */
+.hero {
+    padding: 6rem 2rem 8rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(255,107,107,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(78,205,196,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(69,183,209,0.05) 0%, transparent 50%);
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 4rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+/* Class Selector Cards Redesign */
+.class-selector {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+    animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+.class-card {
+    background: var(--white);
+    border-radius: 24px;
+    padding: 2.5rem;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: var(--card-shadow);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.class-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-red), var(--primary-blue));
+}
+
+.class-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: var(--card-shadow-hover);
+    border-color: var(--accent-gold);
+}
+
+.class-card.active {
+    transform: translateY(-10px);
+    border-color: var(--accent-gold);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.class-10.active::before { background: var(--class10); }
+.class-8.active::before { background: var(--class8); }
+.class-5.active::before { background: var(--class5); }
+
+.class-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 0 auto 2rem;
+    color: white;
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.class-card:hover .class-icon {
+    transform: rotate(0deg) scale(1.1);
+}
+
+.class-10 .class-icon { 
+    background: linear-gradient(135deg, var(--class10), #FF8E8E);
+}
+
+.class-8 .class-icon { 
+    background: linear-gradient(135deg, var(--class8), #8DE9E3);
+}
+
+.class-5 .class-icon { 
+    background: linear-gradient(135deg, var(--class5), #7ACDE5);
+}
+
+.class-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.class-card p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.exam-year {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: var(--light-bg);
+    transition: all 0.3s ease;
+}
+
+.class-card:hover .exam-year {
+    transform: scale(1.05);
+}
+
+.class-10 .exam-year { 
+    background: rgba(255,107,107,0.15);
+    color: var(--class10); 
+}
+
+.class-8 .exam-year { 
+    background: rgba(78,205,196,0.15);
+    color: var(--class8); 
+}
+
+.class-5 .exam-year { 
+    background: rgba(69,183,209,0.15);
+    color: var(--class5); 
+}
+
+/* Main Container */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* Class Header Redesign */
+.class-header {
+    text-align: center;
+    margin: 4rem 0;
+    padding: 4rem 2rem;
+    border-radius: 32px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.class-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 70% 70%, rgba(255,255,255,0.05) 0%, transparent 50%);
+}
+
+.class-10-bg { 
+    background: linear-gradient(135deg, var(--class10), #FF5252);
+}
+
+.class-8-bg { 
+    background: linear-gradient(135deg, var(--class8), #36B8AF);
+}
+
+.class-5-bg { 
+    background: linear-gradient(135deg, var(--class5), #2CA4C9);
+}
+
+.class-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.class-header p {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Subject Grid Redesign */
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+.subject-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-shadow: var(--card-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.subject-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent 30%, rgba(255,255,255,0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.subject-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.subject-card:hover::before {
+    opacity: 1;
+}
+
+.class-10-content .subject-card:hover { 
+    border-color: var(--class10);
+    background: linear-gradient(135deg, #FFF6F6, var(--white));
+}
+
+.class-8-content .subject-card:hover { 
+    border-color: var(--class8);
+    background: linear-gradient(135deg, #F0FFFE, var(--white));
+}
+
+.class-5-content .subject-card:hover { 
+    border-color: var(--class5);
+    background: linear-gradient(135deg, #F0FAFF, var(--white));
+}
+
+.subject-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.subject-card:hover .subject-icon {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.subject-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+.subject-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.sets-count {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.set-badge {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: var(--light-bg);
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.subject-card:hover .set-badge {
+    transform: translateY(-2px);
+}
+
+/* Practice Section Redesign */
+.practice-section {
+    background: var(--white);
+    border-radius: 32px;
+    padding: 4rem;
+    margin: 4rem 0;
+    box-shadow: var(--card-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.practice-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 30%, rgba(255,193,69,0.05) 0%, transparent 50%);
+    z-index: 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--dark);
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.section-title p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.level-badge {
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Quiz Container Redesign */
+.quiz-container {
+    background: var(--light-bg);
+    border-radius: 24px;
+    padding: 2.5rem;
+    display: none;
+    position: relative;
+    z-index: 1;
+    border: 2px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+}
+
+.quiz-container.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(0,0,0,0.05);
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.quiz-header h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.timer {
+    background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 6px 20px rgba(220, 20, 60, 0.3);
+    transition: all 0.3s ease;
+}
+
+.timer.warning {
+    animation: pulse 1s infinite;
+    background: linear-gradient(135deg, #FF6B6B, #FF5252);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: rgba(0,0,0,0.05);
+    border-radius: 6px;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+        var(--class10) 0%, 
+        var(--class8) 50%, 
+        var(--class5) 100%);
+    opacity: 0.1;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-red), var(--primary-blue));
+    transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 0%;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(220, 20, 60, 0.3);
+}
+
+.question-box {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.question-number {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.class-10-content .question-number { 
+    color: var(--class10);
+    background: rgba(255,107,107,0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.class-8-content .question-number { 
+    color: var(--class8);
+    background: rgba(78,205,196,0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.class-5-content .question-number { 
+    color: var(--class5);
+    background: rgba(69,183,209,0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.question-text {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.options {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.option {
+    background: var(--light-bg);
+    padding: 1.2rem 1.5rem;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.option::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent 30%, rgba(255,255,255,0.3) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.option:hover {
+    background: var(--white);
+    transform: translateX(8px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.option:hover::before {
+    opacity: 1;
+}
+
+.option.selected {
+    background: var(--primary-blue);
+    color: white;
+    border-color: var(--primary-blue);
+    transform: translateX(8px);
+    box-shadow: 0 5px 20px rgba(10, 36, 99, 0.3);
+}
+
+.option.correct {
+    background: var(--success);
+    color: white;
+    animation: correctAnswer 0.5s ease;
+}
+
+.option.wrong {
+    background: #FF6B6B;
+    color: white;
+    animation: wrongAnswer 0.5s ease;
+}
+
+@keyframes correctAnswer {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes wrongAnswer {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+.option-label {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.option:hover .option-label {
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.3);
+}
+
+.quiz-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-red), #FF5252);
+    color: white;
+    box-shadow: 0 6px 20px rgba(220, 20, 60, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(220, 20, 60, 0.4);
+}
+
+.btn-secondary {
+    background: var(--white);
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-blue);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(10, 36, 99, 0.3);
+}
+
+.btn-success {
+    background: var(--success);
+    color: white;
+    box-shadow: 0 6px 20px rgba(107, 207, 127, 0.3);
+}
+
+.btn-success:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(107, 207, 127, 0.4);
+}
+
+/* Result Container Redesign */
+.result-container {
+    display: none;
+    text-align: center;
+    padding: 4rem;
+    background: var(--white);
+    border-radius: 32px;
+    animation: fadeIn 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.result-container.active {
+    display: block;
+}
+
+.result-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(255,107,107,0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(78,205,196,0.05) 0%, transparent 50%);
+}
+
+.score-circle {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 3rem;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--primary-red) calc(var(--percentage) * 1%),
+        var(--light-bg) 0%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 
+        0 15px 35px rgba(0,0,0,0.1),
+        inset 0 -8px 16px rgba(0,0,0,0.1),
+        inset 0 8px 16px rgba(255,255,255,0.5);
+    animation: circlePop 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes circlePop {
+    0% { transform: scale(0); opacity: 0; }
+    70% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.score-circle::before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: var(--white);
+    border-radius: 50%;
+    box-shadow: 
+        inset 0 4px 8px rgba(0,0,0,0.1),
+        inset 0 -4px 8px rgba(0,0,0,0.05);
+}
+
+.score-text {
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--primary-red);
+    z-index: 1;
+}
+
+.result-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail-box {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.detail-box:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-blue);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.detail-label {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.detail-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+/* Info Grid Redesign */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin: 4rem 0;
+}
+
+.info-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 24px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--card-shadow-hover);
+    border-color: var(--accent-gold);
+}
+
+.info-card h3 {
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+}
+
+.info-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-card li {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.info-card li:hover {
+    transform: translateX(8px);
+    color: var(--primary-blue);
+}
+
+.info-card li:last-child {
+    border-bottom: none;
+}
+
+.info-card li:before {
+    content: "✓";
+    color: var(--success);
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 24px;
+    height: 24px;
+    background: rgba(107, 207, 127, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Footer Redesign */
+footer {
+    background: linear-gradient(135deg, #1E1E2E 0%, #2D3047 100%);
+    color: white;
+    padding: 4rem 2rem 1.5rem;
+    margin-top: 6rem;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-red), var(--accent-gold), var(--primary-blue));
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+}
+
+.footer-section h3 {
+    color: var(--accent-gold);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--accent-gold);
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-section li:hover {
+    transform: translateX(5px);
+}
+
+.footer-section a {
+    color: #B0B7C3;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-section i {
+    width: 20px;
+    text-align: center;
+    color: var(--accent-gold);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #888;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero h1 { font-size: 2.8rem; }
+    .class-selector { grid-template-columns: 1fr; }
+    .result-details { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+    .header-container { padding: 1rem; }
+    .hero { padding: 4rem 1rem 6rem; }
+    .hero h1 { font-size: 2.2rem; }
+    .hero p { font-size: 1.1rem; }
+    
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        padding: 1rem;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        flex-direction: column;
+    }
+    
+    nav ul.active { display: flex; }
+    
+    .mobile-menu { display: flex; }
+    
+    .class-card { padding: 2rem; }
+    .class-header { padding: 3rem 1rem; }
+    .class-header h2 { font-size: 2rem; }
+    .practice-section { padding: 2rem; }
+    .quiz-container { padding: 1.5rem; }
+    .quiz-header { flex-direction: column; }
+    .options { grid-template-columns: 1fr; }
+    .info-grid { grid-template-columns: 1fr; }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #FF5252, #0A2463);
+}
+
+/* Floating Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.class-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Load Animations */
+[data-animate] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+[data-animate="visible"] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover Effects */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* Glow Effects */
+.glow {
+    box-shadow: 0 0 20px rgba(255,107,107,0.3);
+}
+
+.glow-blue {
+    box-shadow: 0 0 20px rgba(78,205,196,0.3);
+}
+
+/* Additional Helper Classes */
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+}
+
+/* Focus States */
+:focus {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
+/* Selection Color */
+::selection {
+    background: rgba(255,107,107,0.3);
+    color: var(--dark);
+}
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <div>All Exam Set Nepal</div>
+                    <small style="opacity: 0.9; font-size: 0.7em;">Grade 5 | 8 | 10 Preparation Center</small>
+                </div>
+            </div>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home"><i class="fas fa-home"></i> गृहपृष्ठ</a></li>
+                    <li onclick="selectClass(10)"><a href="#class10"><i class="fas fa-star"></i> कक्षा १०</a></li>
+                    <li onclick="selectClass(8)"><a href="#class8"><i class="fas fa-book"></i> कक्षा ८</a></li>
+                    <li onclick="selectClass(5)"><a href="#class5"><i class="fas fa-child"></i> कक्षा ५</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> बारेमा</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>आफ्नो कक्षा छनोट गर्नुहोस्</h1>
+        <p>कक्षा ५, ८ र १० को लागि Model Questions, Practice Sets र Mock Tests</p>
+        
+        <div class="class-selector">
+            <div class="class-card class-10 active" onclick="selectClass(10)">
+                <div class="class-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>कक्षा १० (SEE)</h3>
+                <p>Secondary Education Examination<br>Complete preparation materials</p>
+                <span class="exam-year">2082 बोर्ड परीक्षा</span>
+            </div>
+
+            <div class="class-card class-8" onclick="selectClass(8)">
+                <div class="class-icon">
+                    <i class="fas fa-book-reader"></i>
+                </div>
+                <h3>कक्षा ८ (BLE)</h3>
+                <p>Basic Level Examination<br>Grade 8 Board Exam</p>
+                <span class="exam-year">Basic Level</span>
+            </div>
+
+            <div class="class-card class-5" onclick="selectClass(5)">
+                <div class="class-icon">
+                    <i class="fas fa-child"></i>
+                </div>
+                <h3>कक्षा ५ (PLE)</h3>
+                <p>Primary Level Examination<br>Primary Level Completion</p>
+                <span class="exam-year">Primary Level</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class 10 Content -->
+    <div id="class10-content" class="class-content class-10-content active">
+        <div class="container">
+            <div class="class-header class-10-bg">
+                <h2><i class="fas fa-star"></i> कक्षा १० (SEE) - Model Question Sets</h2>
+                <p>Secondary Education Examination 2082 Complete Preparation</p>
+            </div>
+
+            <div class="subjects-grid">
+                <div class="subject-card" onclick="startSubjectExam(10, 'math')">
+                    <div class="subject-icon" style="background: #e74c3c;">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Compulsory Mathematics</h3>
+                    <p>Algebra, Geometry, Trigonometry & Statistics</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Set 1-5</span>
+                        <span class="set-badge">MCQ + Subjective</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(10, 'science')">
+                    <div class="subject-icon" style="background: #27ae60;">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Science & Technology</h3>
+                    <p>Physics, Chemistry, Biology & Astronomy</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Set 1-4</span>
+                        <span class="set-badge">Practical Theory</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(10, 'english')">
+                    <div class="subject-icon" style="background: #3498db;">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Compulsory English</h3>
+                    <p>Grammar, Literature, Writing & Comprehension</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Full Sets</span>
+                        <span class="set-badge">2082 Pattern</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(10, 'nepali')">
+                    <div class="subject-icon" style="background: #dc143c;">
+                        <i class="fas fa-om"></i>
+                    </div>
+                    <h3>Compulsory Nepali</h3>
+                    <p>नेपाली व्याकरण, साहित्य र लेखन</p>
+                    <div class="sets-count">
+                        <span class="set-badge">सबै Set</span>
+                        <span class="set-badge">नयाँ पाठ्यक्रम</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(10, 'social')">
+                    <div class="subject-icon" style="background: #f39c12;">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <h3>Social Studies</h3>
+                    <p>History, Geography, Civics & Economics</p>
+                    <div class="sets-count">
+                        <span class="set-badge">3 Sets</span>
+                        <span class="set-badge">Map Work</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(10, 'optmath')">
+                    <div class="subject-icon" style="background: #9b59b6;">
+                        <i class="fas fa-square-root-alt"></i>
+                    </div>
+                    <h3>Optional Mathematics</h3>
+                    <p>Advanced Algebra, Calculus & Co-ordinate Geometry</p>
+                    <div class="sets-count">
+                        <span class="set-badge">2 Sets</span>
+                        <span class="set-badge">Optional</span>
+                    </div>
+                </div>
+                <div class="subject-card" onclick="location.href='all_set/class_10/computer_science/computer_science.html'" onclick="startSubjectExam(10, 'computer')" >
+                    <div class="subject-icon" style="background: #16a085;">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Computer Science</h3>
+                    <p>Programming, HTML, QBASIC & Networking</p>
+                    <div class="sets-count">
+                        <span class="set-badge">ALL Sets</span>
+                        <span class="set-badge">Practical</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(10, 'account')">
+                    <div class="subject-icon" style="background: #e67e22;">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Accountancy</h3>
+                    <p>Journal, Ledger, Trial Balance & Final Accounts</p>
+                    <div class="sets-count">
+                        <span class="set-badge">2 Sets</span>
+                        <span class="set-badge">Commercial</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practice Section -->
+            <div class="practice-section">
+                <div class="section-title">
+                    <div class="level-badge" style="background: var(--class10);">SEE Practice Mode</div>
+                    <h2>अनलाइन परीक्षा दिनुहोस्</h2>
+                    <p>तलको विषय छनोट गरी अभ्यास सुरु गर्नुहोस्</p>
+                </div>
+                
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <select id="subject-select-10" style="padding: 12px 25px; border-radius: 10px; border: 2px solid #ddd; font-size: 1.1rem; cursor: pointer;">
+                        <option value="math">Compulsory Mathematics</option>
+                        <option value="science">Science & Technology</option>
+                        <option value="english">Compulsory English</option>
+                        <option value="nepali">Compulsory Nepali</option>
+                        <option value="social">Social Studies</option>
+                    </select>
+                </div>
+
+                <div style="text-align: center;">
+                    <button class="btn btn-primary" onclick="startMockExam(10)">
+                        <i class="fas fa-play"></i> परीक्षा सुरु गर्नुहोस्
+                    </button>
+                </div>
+
+                <!-- Quiz Interface -->
+                <div id="quiz-10" class="quiz-container" style="margin-top: 2rem;">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-10"></div>
+                    </div>
+                    
+                    <div class="quiz-header">
+                        <div>
+                            <h3 id="quiz-title-10">Subject Name</h3>
+                            <p style="color: #666; font-size: 0.9rem;">Class 10 | Full Marks: 100 | Time: 2 hours</p>
+                        </div>
+                        <div class="timer" id="timer-10">
+                            <i class="fas fa-clock"></i>
+                            <span id="time-10">30:00</span>
+                        </div>
+                    </div>
+
+                    <div id="question-box-10"></div>
+
+                    <div class="quiz-controls">
+                        <button class="btn btn-secondary" onclick="prevQuestion(10)" id="prev-10">
+                            <i class="fas fa-arrow-left"></i> अघिल्लो
+                        </button>
+                        <button class="btn btn-primary" onclick="nextQuestion(10)" id="next-10">
+                            अर्को <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn btn-success" onclick="submitExam(10)" id="submit-10" style="display: none;">
+                            <i class="fas fa-check"></i> बुझाउनुहोस्
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Result -->
+                <div id="result-10" class="result-container">
+                    <div class="score-circle" id="circle-10" style="--percentage: 0;">
+                        <span class="score-text" id="score-text-10">0%</span>
+                    </div>
+                    <h2 style="color: var(--class10); margin-bottom: 1rem;">परीक्षा परिणाम</h2>
+                    <div class="result-details">
+                        <div class="detail-box">
+                            <div class="detail-label">सही जवाफ</div>
+                            <div class="detail-value" id="correct-10" style="color: var(--success);">0</div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="detail-label">गलत जवाफ</div>
+                            <div class="detail-value" id="wrong-10" style="color: #e74c3c;">0</div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="detail-label">कुल अङ्क</div>
+                            <div class="detail-value" id="marks-10" style="color: var(--class10);">0/100</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="resetExam(10)" style="margin-top: 1rem;">
+                        <i class="fas fa-redo"></i> फेरि प्रयास गर्नुहोस्
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Class 8 Content -->
+    <div id="class8-content" class="class-content class-8-content">
+        <div class="container">
+            <div class="class-header class-8-bg">
+                <h2><i class="fas fa-book-reader"></i> कक्षा ८ (BLE) - Model Question Sets</h2>
+                <p>Basic Level Examination - Grade 8 Board Exam Preparation</p>
+            </div>
+
+            <div class="subjects-grid">
+                <div class="subject-card" onclick="startSubjectExam(8, 'math')">
+                    <div class="subject-icon" style="background: #3498db;">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Mathematics</h3>
+                    <p> arithmetic, Algebra & Geometry</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Set 1-3</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(8, 'science')">
+                    <div class="subject-icon" style="background: #27ae60;">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Science & Environment</h3>
+                    <p>Living & Non-living World</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Practical Included</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(8, 'english')">
+                    <div class="subject-icon" style="background: #e74c3c;">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>English</h3>
+                    <p>Reading, Writing & Grammar</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Comprehension</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(8, 'nepali')">
+                    <div class="subject-icon" style="background: #dc143c;">
+                        <i class="fas fa-om"></i>
+                    </div>
+                    <h3>मातृभाषा (नेपाली)</h3>
+                    <p>नेपाली व्याकरण र साहित्य</p>
+                    <div class="sets-count">
+                        <span class="set-badge">सबै Set</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(8, 'social')">
+                    <div class="subject-icon" style="background: #f39c12;">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <h3>Social Studies & MEP</h3>
+                    <p>History, Geography, Civics & Population</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Map Skills</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(8, 'computer')">
+                    <div class="subject-icon" style="background: #9b59b6;">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Computer Science</h3>
+                    <p>Fundamentals & Applications</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Basic</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(8, 'health')">
+                    <div class="subject-icon" style="background: #16a085;">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Health & Physical Education</h3>
+                    <p>Health, Sanitation & Sports</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Theory</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(8, 'arts')">
+                    <div class="subject-icon" style="background: #e67e22;">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Creative Arts</h3>
+                    <p>Music, Dance & Visual Arts</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Optional</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="practice-section">
+                <div class="section-title">
+                    <div class="level-badge" style="background: var(--class8);">Class 8 Practice</div>
+                    <h2>कक्षा ८ को अनलाइन परीक्षा</h2>
+                </div>
+
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <select id="subject-select-8" style="padding: 12px 25px; border-radius: 10px; border: 2px solid #ddd; font-size: 1.1rem;">
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science & Environment</option>
+                        <option value="english">English</option>
+                        <option value="nepali">Nepali</option>
+                        <option value="social">Social Studies & MEP</option>
+                    </select>
+                </div>
+
+                <div style="text-align: center;">
+                    <button class="btn btn-primary" onclick="startMockExam(8)" style="background: var(--class8);">
+                        <i class="fas fa-play"></i> परीक्षा सुरु गर्नुहोस्
+                    </button>
+                </div>
+
+                <div id="quiz-8" class="quiz-container" style="margin-top: 2rem;">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-8" style="background: var(--class8);"></div>
+                    </div>
+                    <div class="quiz-header">
+                        <div>
+                            <h3 id="quiz-title-8">Subject Name</h3>
+                            <p style="color: #666;">Class 8 | Time: 1 hour</p>
+                        </div>
+                        <div class="timer" id="timer-8" style="background: var(--class8);">
+                            <i class="fas fa-clock"></i>
+                            <span id="time-8">20:00</span>
+                        </div>
+                    </div>
+                    <div id="question-box-8"></div>
+                    <div class="quiz-controls">
+                        <button class="btn btn-secondary" onclick="prevQuestion(8)" id="prev-8">अघिल्लो</button>
+                        <button class="btn btn-primary" onclick="nextQuestion(8)" id="next-8" style="background: var(--class8);">अर्को</button>
+                        <button class="btn btn-success" onclick="submitExam(8)" id="submit-8" style="display: none;">बुझाउनुहोस्</button>
+                    </div>
+                </div>
+
+                <div id="result-8" class="result-container">
+                    <div class="score-circle" id="circle-8" style="--percentage: 0; background: conic-gradient(var(--class8) calc(var(--percentage) * 1%), #e0e0e0 0);">
+                        <span class="score-text" id="score-text-8" style="color: var(--class8);">0%</span>
+                    </div>
+                    <h2 style="color: var(--class8);">Class 8 Result</h2>
+                    <div class="result-details">
+                        <div class="detail-box"><div class="detail-label">सही</div><div class="detail-value" id="correct-8">0</div></div>
+                        <div class="detail-box"><div class="detail-label">गलत</div><div class="detail-value" id="wrong-8">0</div></div>
+                        <div class="detail-box"><div class="detail-label">अङ्क</div><div class="detail-value" id="marks-8">0</div></div>
+                    </div>
+                    <button class="btn btn-primary" onclick="resetExam(8)" style="background: var(--class8);">फेरि प्रयास</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Class 5 Content -->
+    <div id="class5-content" class="class-content class-5-content">
+        <div class="container">
+            <div class="class-header class-5-bg">
+                <h2><i class="fas fa-child"></i> कक्षा ५ (PLE) - Model Question Sets</h2>
+                <p>Primary Level Examination - Primary Level Completion Test</p>
+            </div>
+
+            <div class="subjects-grid">
+                <div class="subject-card" onclick="startSubjectExam(5, 'math')">
+                    <div class="subject-icon" style="background: #e74c3c;">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Mathematics</h3>
+                    <p>Numbers, Fractions, Geometry & Measurement</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Fun Math</span>
+                        <span class="set-badge">MCQ</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(5, 'english')">
+                    <div class="subject-icon" style="background: #3498db;">
+                        <i class="fas fa-font"></i>
+                    </div>
+                    <h3>English</h3>
+                    <p>Reading, Vocabulary & Grammar</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Picture Based</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(5, 'nepali')">
+                    <div class="subject-icon" style="background: #dc143c;">
+                        <i class="fas fa-pen"></i>
+                    </div>
+                    <h3>नेपाली</h3>
+                    <p>पढाइ, लेखाइ र व्याकरण</p>
+                    <div class="sets-count">
+                        <span class="set-badge">सरल प्रश्न</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(5, 'science')">
+                    <div class="subject-icon" style="background: #27ae60;">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Science & Environment</h3>
+                    <p>Living Things, Nature & Environment</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Pictures</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(5, 'social')">
+                    <div class="subject-icon" style="background: #f39c12;">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Social Studies</h3>
+                    <p>Family, Society & Local Environment</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Basic</span>
+                    </div>
+                </div>
+
+                <div class="subject-card" onclick="startSubjectExam(5, 'health')">
+                    <div class="subject-icon" style="background: #16a085;">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Health & Physical Ed.</h3>
+                    <p>Good Habits, Cleanliness & Games</p>
+                    <div class="sets-count">
+                        <span class="set-badge">Easy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="practice-section">
+                <div class="section-title">
+                    <div class="level-badge" style="background: var(--class5);">Class 5 Practice</div>
+                    <h2>कक्षा ५ कोสนุก परीक्षा</h2>
+                    <p>साना साथीहरुको लागि सरल र सिकाइलाई मज्जा बनाउने प्रश्नहरु</p>
+                </div>
+
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <select id="subject-select-5" style="padding: 12px 25px; border-radius: 10px; border: 2px solid #ddd; font-size: 1.1rem;">
+                        <option value="math">Mathematics</option>
+                        <option value="english">English</option>
+                        <option value="nepali">Nepali</option>
+                        <option value="science">Science & Environment</option>
+                    </select>
+                </div>
+
+                <div style="text-align: center;">
+                    <button class="btn btn-primary" onclick="startMockExam(5)" style="background: var(--class5);">
+                        <i class="fas fa-play-circle"></i> सुरु गर्नुहोस्
+                    </button>
+                </div>
+
+                <div id="quiz-5" class="quiz-container" style="margin-top: 2rem;">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-5" style="background: var(--class5);"></div>
+                    </div>
+                    <div class="quiz-header">
+                        <div>
+                            <h3 id="quiz-title-5">Subject</h3>
+                            <p style="color: #666;">Class 5 | Fun Quiz Mode</p>
+                        </div>
+                        <div class="timer" id="timer-5" style="background: var(--class5);">
+                            <i class="fas fa-clock"></i>
+                            <span id="time-5">15:00</span>
+                        </div>
+                    </div>
+                    <div id="question-box-5"></div>
+                    <div class="quiz-controls">
+                        <button class="btn btn-secondary" onclick="prevQuestion(5)" id="prev-5">अघिल्लो</button>
+                        <button class="btn btn-primary" onclick="nextQuestion(5)" id="next-5" style="background: var(--class5);">अर्को</button>
+                        <button class="btn btn-success" onclick="submitExam(5)" id="submit-5" style="display: none;">सकियो!</button>
+                    </div>
+                </div>
+
+                <div id="result-5" class="result-container">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">🌟</div>
+                    <div class="score-circle" id="circle-5" style="--percentage: 0; background: conic-gradient(var(--class5) calc(var(--percentage) * 1%), #e0e0e0 0);">
+                        <span class="score-text" id="score-text-5" style="color: var(--class5);">0%</span>
+                    </div>
+                    <h2 style="color: var(--class5);">धेरै राम्रो!</h2>
+                    <div class="result-details">
+                        <div class="detail-box"><div class="detail-label">सही</div><div class="detail-value" id="correct-5">0</div></div>
+                        <div class="detail-box"><div class="detail-label">गलत</div><div class="detail-value" id="wrong-5">0</div></div>
+                        <div class="detail-box"><div class="detail-label">तारा</div><div class="detail-value" id="marks-5">⭐</div></div>
+                    </div>
+                    <button class="btn btn-primary" onclick="resetExam(5)" style="background: var(--class5);">फेरि खेलौं</button>
+                </div>
+            </div>
+
+            <!-- Fun Learning Section -->
+            <div class="info-grid" style="margin-top: 3rem;">
+                <div class="info-card" style="border-left: 5px solid var(--class5);">
+                    <h3><i class="fas fa-gamepad" style="color: var(--class5);"></i> रमाइलो तरिकाले सिकौं</h3>
+                    <ul>
+                        <li>चित्र हेरेर पहिचान गर्ने प्रश्नहरु</li>
+                        <li>रङ्गीन कार्डहरू सहितको अभ्यास</li>
+                        <li>स肥厚 विज्ञान प्रयोगहरु</li>
+                        <li>गणितको魔术 (Magic of Math)</li>
+                    </ul>
+                </div>
+                <div class="info-card" style="border-left: 5px solid #e74c3c;">
+                    <h3><i class="fas fa-shapes" style="color: #e74c3c;"></i> पाठ्यक्रम सामग्री</h3>
+                    <ul>
+                        <li>कक्षा ५ का सबै विषयहरु</li>
+                        <li>Teacher's Guide अनुसार</li>
+                        <li>Weekly Test Papers</li>
+                        <li>Final Exam Preparation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="about">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>कक्षा १० (SEE)</h3>
+                <ul>
+                    <li><a href="#">Model Questions 2082</a></li>
+                    <li><a href="#">Practice Sets</a></li>
+                    <li><a href="#">Past Papers</a></li>
+                    <li><a href="#">Notes</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>कक्षा ८ (BLE)</h3>
+                <ul>
+                    <li><a href="#">Basic Level Exam</a></li>
+                    <li><a href="#">Subject wise Tests</a></li>
+                    <li><a href="#">Important Questions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>कक्षा ५ (PLE)</h3>
+                <ul>
+                    <li><a href="#">Primary Level Tests</a></li>
+                    <li><a href="#">Fun Learning</a></li>
+                    <li><a href="#">Picture Questions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> shukhariyaaashish@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +977-9819594534</li>
+                    <li>Bardiya, Nepal</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2082-2083 All Exam Set Nepal. Grade 5, 8 & 10 Specialist Platform</p>
+        </div>
+    </footer>
+
+    <script>
+        // Question Banks for Each Class
+        const questionData = {
+            10: {
+                math: [
+                    {q: "If x + 1/x = 3, then x³ + 1/x³ = ?", options: ["18", "27", "9", "36"], correct: 0},
+                    {q: "Sum of first 20 odd numbers is:", options: ["400", "420", "380", "440"], correct: 0},
+                    {q: "If α and β are roots of x² - 5x + 6 = 0, then α + β = ?", options: ["5", "6", "1", "-5"], correct: 0},
+                    {q: "Elevation angle of tower from 100m away is 30°. Height is:", options: ["100/√3", "100√3", "50", "200"], correct: 0},
+                    {q: "If A = {1,2,3} and B = {2,3,4}, then A ∩ B = ?", options: ["{1,2,3,4}", "{2,3}", "{1,4}", "None"], correct: 1}
+                ],
+                science: [
+                    {q: "Chemical formula of Ammonia is:", options: ["NH₃", "NH₄", "NO₂", "N₂O"], correct: 0},
+                    {q: "Unit of electric current:", options: ["Volt", "Ampere", "Ohm", "Watt"], correct: 1},
+                    {q: "Gas released during photosynthesis:", options: ["CO₂", "Oxygen", "Nitrogen", "Hydrogen"], correct: 1},
+                    {q: "Mirror used by dentists:", options: ["Plane", "Concave", "Convex", "None"], correct: 1},
+                    {q: "Valency of Carbon:", options: ["2", "3", "4", "5"], correct: 2}
+                ],
+                english: [
+                    {q: "Correct sentence: He ___ apples.", options: ["don't like", "doesn't likes", "doesn't like", "not like"], correct: 2},
+                    {q: "Synonym of 'Enormous':", options: ["Tiny", "Huge", "Small", "Minute"], correct: 1},
+                    {q: "Noun in: 'Honesty is the best policy'", options: ["best", "policy", "Honesty", "is"], correct: 2},
+                    {q: "Passive: 'They are playing football'", options: ["Football is being played", "is played", "has been played", "was played"], correct: 0},
+                    {q: "Compound sentence:", options: ["Although he tried", "He tried but failed", "Having tried", "He failed trying"], correct: 1}
+                ],
+                nepali: [
+                    {q: "'लेख्नु' को भूतकाल:", options: ["लेख्छु", "लेख्यो", "लेख्छ", "लेखिनेछ"], correct: 1},
+                    {q: "तत्पुरुष समाश:", options: ["माछापुच्छ्रे", "रातो पहिरन", "घामपानी", "राजमार्ग"], correct: 3},
+                    {q: "'नेपाल' मा कति वर्ण?", options: ["३", "४", "५", "६"], correct: 2},
+                    {q: "अशुद्ध वाक्य:", options: ["म स्कुल जान्छु", "उ आउँछ", "मैले खाना खाएँ", "उहाँहरु जान्छस्"], correct: 3},
+                    {q: "'विद्यालय' को पर्यायवाची:", options: ["पाठशाला", "विहान", "शिक्षक", "विद्या"], correct: 0}
+                ],
+                social: [
+                    {q: "नेपालको सबैभन्दा लामो नदी:", options: ["कोशी", "गण्डकी", "कर्णाली", "नारायणी"], correct: 2},
+                    {q: "UNO स्थापना:", options: ["1945", "1947", "1950", "1939"], correct: 0},
+                    {q: "राष्ट्रिय फूल:", options: ["गुलाफ", "लालीगुराँस", "सयपत्री", "चमेली"], correct: 1},
+                    {q: "सगरमाथाको उचाइ:", options: ["8848", "8840", "8850", "8845"], correct: 0},
+                    {q: "प्रदेशको संख्या:", options: ["५", "६", "७", "८"], correct: 2}
+                ]
+            },
+            8: {
+                math: [
+                    {q: "15 को 20% कति हुन्छ?", options: ["2", "3", "4", "5"], correct: 1},
+                    {q: "345 मा 5 को स्थानीय मान:", options: ["5", "50", "0.5", "500"], correct: 0},
+                    {q: "ट्राभर्सको संख्या:", options: ["1", "2", "3", "4"], correct: 0},
+                    {q: "समद्विबाहु त्रिभुजमा कोण:", options: ["60°", "90°", "45°", "80°"], correct: 2},
+                    {q: "2/5 = ? %", options: ["20%", "40%", "50%", "25%"], correct: 1}
+                ],
+                science: [
+                    {q: "विरुवाको हरियो अंग:", options: ["जरा", "पात", "फूल", "बीउ"], correct: 1},
+                    {q: "पानीको अणु सूत्र:", options: ["HO", "H₂O", "CO₂", "O₂"], correct: 1},
+                    {q: "सौर्यमण्डलको केन्द्र:", options: ["पृथ्वी", "चन्द्रमा", "सूर्य", "तारा"], correct: 2},
+                    {q: "मानव शरीरको क总算部:", options: ["106", "206", "306", "406"], correct: 1},
+                    {q: "ध्वनिको单位为:", options: ["मिटर", "हर्ट्ज", "सेकेन्ड", "न्युटन"], correct: 1}
+                ],
+                english: [
+                    {q: "Plural of 'Child':", options: ["Childs", "Children", "Childrens", "Childes"], correct: 1},
+                    {q: "Opposite of 'Happy':", options: ["Joyful", "Sad", "Angry", "Excited"], correct: 1},
+                    {q: "Past tense of 'Go':", options: ["Goes", "Going", "Went", "Gone"], correct: 2},
+                    {q: "Article before 'honest':", options: ["a", "an", "the", "no article"], correct: 1},
+                    {q: "Which is a verb?", options: ["Beautiful", "Quickly", "Run", "Happiness"], correct: 2}
+                ],
+                nepali: [
+                    {q: "समासको प्रकार पहिचान गर्नुहोस् 'राजपथ':", options: ["कर्मधारय", "तत्पुरुष", "बहुव्रीहि", "द्विगु"], correct: 1},
+                    {q: "'राम' शब्दको लिङ्ग:", options: ["स्त्रीलिङ्ग", "पुलिङ्ग", "नपुंसकलिङ्ग", "उभयलिङ्ग"], correct: 1},
+                    {q: "विलोम शब्द '南方人':", options: ["पूर्व", "पश्चिम", "उत्तर", "माथि"], correct: 2},
+                    {q: "सर्वनामको उदाहरण:", options: ["राम", "काग", "उस्", "राम्रो"], correct: 2}
+                ],
+                social: [
+                    {q: "नेपालको राजधानी:", options: ["पोखरा", "काठमाडौं", "भक्तपुर", "ललितपुर"], correct: 1},
+                    {q: "नेपालको कुल क्षेत्रफल:", options: ["1,47,181", "1,47,516", "1,48,000", "1,46,000"], correct: 0},
+                    {q: "हिमालको देश भनेर कुन देश चिनिन्छ?", options: ["चीन", "भारत", "नेपाल", "भूटान"], correct: 2},
+                    {q: "नेपालको राष्ट्रिय झण्डामा कति कोण छन्?", options: ["2", "3", "4", "5"], correct: 1}
+                ]
+            },
+            5: {
+                math: [
+                    {q: "5 + 8 = ?", options: ["12", "13", "14", "15"], correct: 1},
+                    {q: "एउटा दर्जनमा कति वटा हुन्छन्?", options: ["10", "11", "12", "13"], correct: 2},
+                    {q: "सबैभन्दा सानो अंक कुन हो?", options: ["1", "0", "2", "9"], correct: 1},
+                    {q: "त्रिकोणमा कति भुजा हुन्छन्?", options: ["2", "3", "4", "5"], correct: 1},
+                    {q: "1 मिटरमा कति सेमी हुन्छ?", options: ["10", "100", "1000", "50"], correct: 1}
+                ],
+                english: [
+                    {q: "Which letter comes after B?", options: ["A", "C", "D", "E"], correct: 1},
+                    {q: "Opposite of 'Big':", options: ["Large", "Small", "Huge", "Giant"], correct: 1},
+                    {q: "Color of Sky:", options: ["Red", "Blue", "Green", "Yellow"], correct: 1},
+                    {q: "Which is a fruit?", options: ["Carrot", "Apple", "Potato", "Spinach"], correct: 1},
+                    {q: "How many days in a week?", options: ["5", "6", "7", "8"], correct: 2}
+                ],
+                nepali: [
+                    {q: "नेपाली वर्णमालामा कति वर्ण छन्?", options: ["३६", "४६", "५०", "५२"], correct: 0},
+                    {q: "क कसको उच्चारण स्थान हो?", options: ["ओठ", "दन्त", "तालु", "मूर्धन्य"], correct: 0},
+                    {q: "'माछा' को बहुवचन:", options: ["माछाहरु", "माछा", "माछाहरू", "माछाs"], correct: 2},
+                    {q: "नेपालको राजधानी:", options: ["पोखरा", "काठमाडौं", "विराटनगर", "धरान"], correct: 1}
+                ],
+                science: [
+                    {q: "बिरुवाले कुन ग्यास सास फेर्छन्?", options: ["अक्सिजन", "कार्बन डाइअक्साइड", "नाइट्रोजन", "हाइड्रोजन"], correct: 1},
+                    {q: "सूर्य कुन दिशाबाट उदाउँछ?", options: ["पूर्व", "पश्चिम", "उत्तर", "दक्षिण"], correct: 0},
+                    {q: "पानीको अवस्था कति प्रकारका हुन्छन्?", options: ["2", "3", "4", "5"], correct: 1},
+                    {q: "मानव शरीरमा कति हात हुन्छन्?", options: ["1", "2", "3", "4"], correct: 1}
+                ]
+            }
+        };
+
+        // Current State
+        let currentClass = 10;
+        let currentSubject = 'math';
+        let currentQuestion = 0;
+        let answers = [];
+        let timerInterval;
+        let timeLeft;
+
+        // Select Class
+        function selectClass(cls) {
+            currentClass = cls;
+            
+            // Update UI
+            document.querySelectorAll('.class-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+            
+            // Show content
+            document.querySelectorAll('.class-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(`class${cls}-content`).classList.add('active');
+            
+            // Scroll to content
+            setTimeout(() => {
+                document.getElementById(`class${cls}-content`).scrollIntoView({behavior: 'smooth'});
+            }, 100);
+        }
+
+        // Start Subject Exam
+        function startSubjectExam(cls, subject) {
+            selectClass(cls);
+            document.getElementById(`subject-select-${cls}`).value = subject;
+            startMockExam(cls);
+        }
+
+        // Start Mock Exam
+        function startMockExam(cls) {
+            const subject = document.getElementById(`subject-select-${cls}`).value;
+            const questions = questionData[cls][subject] || questionData[cls]['math'];
+            
+            currentClass = cls;
+            currentSubject = subject;
+            currentQuestion = 0;
+            answers = new Array(questions.length).fill(null);
+            
+            // Set timer based on class
+            if (cls === 10) timeLeft = 1800; // 30 mins
+            else if (cls === 8) timeLeft = 1200; // 20 mins
+            else timeLeft = 900; // 15 mins
+            
+            // Show quiz
+            document.getElementById(`quiz-${cls}`).classList.add('active');
+            document.getElementById(`result-${cls}`).classList.remove('active');
+            document.getElementById(`quiz-title-${cls}`).textContent = 
+                cls === 5 ? 'Fun Quiz!' : subject.charAt(0).toUpperCase() + subject.slice(1);
+            
+            startTimer(cls);
+            showQuestion(cls);
+        }
+
+        // Timer
+        function startTimer(cls) {
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                if (timeLeft > 0) {
+                    timeLeft--;
+                    const mins = Math.floor(timeLeft / 60);
+                    const secs = timeLeft % 60;
+                    document.getElementById(`time-${cls}`).textContent = 
+                        `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+                    
+                    if (timeLeft < 300) {
+                        document.getElementById(`timer-${cls}`).classList.add('warning');
+                    }
+                } else {
+                    submitExam(cls);
+                }
+            }, 1000);
+        }
+
+        // Show Question
+        function showQuestion(cls) {
+            const questions = questionData[cls][currentSubject];
+            const q = questions[currentQuestion];
+            const container = document.getElementById(`question-box-${cls}`);
+            
+            // Progress
+            const progress = ((currentQuestion + 1) / questions.length) * 100;
+            document.getElementById(`progress-${cls}`).style.width = progress + '%';
+            
+            let html = `
+                <div class="question-box">
+                    <div class="question-number">Question ${currentQuestion + 1} of ${questions.length}</div>
+                    <div class="question-text">${q.q}</div>
+                    <div class="options">
+            `;
+            
+            q.options.forEach((opt, idx) => {
+                const selected = answers[currentQuestion] === idx ? 'selected' : '';
+                html += `
+                    <div class="option ${selected}" onclick="selectOption(${cls}, ${idx})">
+                        <div class="option-label">${String.fromCharCode(65 + idx)}</div>
+                        <div>${opt}</div>
+                    </div>
+                `;
+            });
+            
+            html += '</div></div>';
+            container.innerHTML = html;
+            
+            // Buttons
+            document.getElementById(`prev-${cls}`).style.display = currentQuestion === 0 ? 'none' : 'flex';
+            
+            if (currentQuestion === questions.length - 1) {
+                document.getElementById(`next-${cls}`).style.display = 'none';
+                document.getElementById(`submit-${cls}`).style.display = 'flex';
+            } else {
+                document.getElementById(`next-${cls}`).style.display = 'flex';
+                document.getElementById(`submit-${cls}`).style.display = 'none';
+            }
+        }
+
+        // Select Option
+        function selectOption(cls, idx) {
+            answers[currentQuestion] = idx;
+            showQuestion(cls);
+        }
+
+        // Navigation
+        function nextQuestion(cls) {
+            const questions = questionData[cls][currentSubject];
+            if (currentQuestion < questions.length - 1) {
+                currentQuestion++;
+                showQuestion(cls);
+            }
+        }
+
+        function prevQuestion(cls) {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                showQuestion(cls);
+            }
+        }
+
+        // Submit
+        function submitExam(cls) {
+            clearInterval(timerInterval);
+            const questions = questionData[cls][currentSubject];
+            
+            let correct = 0;
+            let wrong = 0;
+            
+            answers.forEach((ans, idx) => {
+                if (ans === questions[idx].correct) correct++;
+                else if (ans !== null) wrong++;
+            });
+            
+            const percentage = Math.round((correct / questions.length) * 100);
+            
+            // Show results
+            document.getElementById(`quiz-${cls}`).classList.remove('active');
+            document.getElementById(`result-${cls}`).classList.add('active');
+            
+            // Animate
+            setTimeout(() => {
+                document.getElementById(`circle-${cls}`).style.setProperty('--percentage', percentage);
+                document.getElementById(`score-text-${cls}`).textContent = percentage + '%';
+            }, 100);
+            
+            document.getElementById(`correct-${cls}`).textContent = correct;
+            document.getElementById(`wrong-${cls}`).textContent = wrong;
+            
+            if (cls !== 5) {
+                const marks = cls === 10 ? (correct * 20) : (correct * 10);
+                const total = cls === 10 ? 100 : (questions.length * 10);
+                document.getElementById(`marks-${cls}`).textContent = `${marks}/${total}`;
+            } else {
+                let stars = '⭐';
+                if (percentage > 80) stars = '⭐⭐⭐';
+                else if (percentage > 50) stars = '⭐⭐';
+                document.getElementById(`marks-5`).textContent = stars;
+            }
+        }
+
+        // Reset
+        function resetExam(cls) {
+            document.getElementById(`result-${cls}`).classList.remove('active');
+            document.getElementById(`timer-${cls}`).classList.remove('warning');
+            startMockExam(cls);
+        }
+
+        // Mobile Menu
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+
+        // Prevent refresh during exam
+        window.onbeforeunload = function() {
+            if (document.querySelector('.quiz-container.active')) {
+                return "परीक्षा जारी छ! के तपाईं निश्चित हुनुहुन्छ?";
+            }
+        };
+    </script>
+</body>
+</html>
